@@ -1,4 +1,9 @@
 {
-    "testRegex": "((\\.|/*.)(spec))\\.js?$"
-  }
-  
+    "testRegex": "((\\.|/*.)(spec))\\.js?$",
+    "collectCoverage": true,
+    "moduleFileExtensions": ["js", "mjs"],
+    "transform": {
+        "^.+\\.js$": "babel-jest",
+        "^.+\\.mjs$": "babel-jest"
+    }
+}
